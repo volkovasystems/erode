@@ -1,0 +1,30 @@
+{
+  "name": "erode",
+  "version": "0.0.0",
+  "description": "Delete symbol property.",
+  "main": "erode.deploy.js",
+  "support": "erode.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "delete",
+    "symbol",
+    "property",
+    "erode"
+  ],
+  "homepage": "https://github.com/volkovasystems/erode",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "falzy": "^0.19.0",
+    "mtch": "^0.1.0",
+    "protype": "^0.21.0"
+  }
+}

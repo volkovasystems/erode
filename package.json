@@ -1,0 +1,43 @@
+{
+  "name": "erode",
+  "version": "0.0.0",
+  "description": "Delete symbol property.",
+  "main": "erode.js",
+  "support": "erode.support.js",
+  "deploy": "erode.deploy.js",
+  "browser": "erode.deploy.js",
+  "scripts": {
+    "build": "babel erode.js --out-file erode.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha erode-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/erode.git"
+  },
+  "keywords": [
+    "delete",
+    "symbol",
+    "property",
+    "erode"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/erode/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/erode#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "falzy": "^0.19.0",
+    "mtch": "^0.1.0",
+    "protype": "^0.21.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.6.1"
+  }
+}
