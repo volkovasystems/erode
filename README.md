@@ -1,0 +1,2 @@
+# erode
+Delete symbol property.
