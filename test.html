@@ -1,8 +1,32 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./erode.deploy.js">
-		</script>
+		<title>erode unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./erode.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "erode unit test", function( assert ) {
+
+				let symbol = Symbol( "hello" );
+				let data = { };
+				data[ symbol ] = 12345;
+
+				erode( symbol, data );
+
+				assert.equal( data[ symbol ], undefined, "should be equal" );
+				
+			} );
+		</script>
+	</body>
 </html>
