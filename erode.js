@@ -89,7 +89,7 @@ const erode = function erode( symbol, entity ){
 		throw new Error( "invalid entity" );
 	}
 
-	if( protype( symbol, SYMBOL ) ){
+	if( typeof symbol == SYMBOL ){
 		symbol = mtch( symbol.toString( ), SYMBOL_PATTERN, 1 );
 
 	}else{
