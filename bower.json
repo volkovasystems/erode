@@ -1,6 +1,6 @@
 {
   "name": "erode",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Delete symbol property.",
   "main": "erode.deploy.js",
   "support": "erode.support.js",
@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "falzy": "^0.20.0",
-    "mtch": "^0.3.0",
+    "mtch": "^0.4.0",
     "protype": "^0.22.0"
   }
 }
