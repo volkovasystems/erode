@@ -1,32 +1,32 @@
 {
-  "name": "erode",
-  "version": "0.3.0",
-  "description": "Delete symbol property.",
-  "main": "erode.deploy.js",
-  "support": "erode.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "delete",
-    "symbol",
-    "property",
-    "erode"
-  ],
-  "homepage": "https://github.com/volkovasystems/erode",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "falzy": "^0.20.0",
-    "mtch": "^0.4.0",
-    "protype": "^0.22.0"
-  }
+	"name": "erode",
+	"version": "0.4.0",
+	"description": "Delete symbol property.",
+	"main": "erode.deploy.js",
+	"support": "erode.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"delete",
+		"symbol",
+		"property",
+		"erode"
+	],
+	"homepage": "https://github.com/volkovasystems/erode",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"falzy": "^0.23.0",
+		"mtch": "^0.6.0",
+		"protype": "^0.23.0"
+	}
 }

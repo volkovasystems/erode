@@ -1,47 +1,52 @@
 {
-  "name": "erode",
-  "version": "0.3.0",
-  "description": "Delete symbol property.",
-  "main": "erode.js",
-  "support": "erode.support.js",
-  "deploy": "erode.deploy.js",
-  "browser": "erode.deploy.js",
-  "scripts": {
-    "build": "babel erode.js --out-file erode.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha erode-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/erode.git"
-  },
-  "keywords": [
-    "delete",
-    "symbol",
-    "property",
-    "erode"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/erode/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/erode#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "falzy": "^0.20.0",
-    "mtch": "^0.4.0",
-    "protype": "^0.22.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.1.0"
-  }
+	"name": "erode",
+	"version": "0.4.0",
+	"description": "Delete symbol property.",
+	"main": "erode.js",
+	"support": "erode.support.js",
+	"deploy": "erode.deploy.js",
+	"browser": "erode.deploy.js",
+	"scripts": {
+		"build": "babel erode.js --out-file erode.support.js --source-maps && webpack --progress --display-modules",
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"clear": "rsetmod clean --clear",
+		"formal": "jesy apply '*.json'",
+		"pretest": "npm run clear && npm run build",
+		"test": "node erode-test.js",
+		"posttest": "npm run formal"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/erode.git"
+	},
+	"keywords": [
+		"delete",
+		"symbol",
+		"property",
+		"erode"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/erode/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/erode#readme",
+	"dependencies": {
+		"babel-runtime": "^6.23.0",
+		"falzy": "^0.23.0",
+		"mtch": "^0.6.0",
+		"protype": "^0.23.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"source-map-loader": "^0.2.1",
+		"webpack": "^3.4.0"
+	}
 }
