@@ -8,6 +8,6 @@ data[ symbol ] = 12345;
 
 erode( symbol, data );
 
-assert.equal( data[ symbol ], undefined, "should be equal" );
+assert.equal( data[ symbol ], undefined, "should be equal to undefined" );
 
 console.log( "ok" );
