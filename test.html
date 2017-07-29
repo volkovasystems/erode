@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>erode unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:erode</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./erode.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "erode unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				let symbol = Symbol( "hello" );
-				let data = { };
-				data[ symbol ] = 12345;
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				erode( symbol, data );
-
-				assert.equal( data[ symbol ], undefined, "should be equal to undefined" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
