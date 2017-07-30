@@ -1,0 +1,32 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-07-30T18:00:42.775Z",
+    "end": "2017-07-30T18:00:42.780Z",
+    "duration": 5
+  },
+  "tests": [
+    {
+      "title": "should be equal to undefined",
+      "fullTitle": "erode `erode( symbol, data )` should be equal to undefined",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should be equal to undefined",
+      "fullTitle": "erode `erode( symbol, data )` should be equal to undefined",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
