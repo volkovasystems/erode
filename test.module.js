@@ -73,8 +73,8 @@ const path = require( "path" );
 
 describe( "erode", ( ) => {
 
-	describe( "`erode( symbol, data )`", ( ) => {
-		it( "should be equal to undefined", ( ) => {
+	describe( "`erode( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
+		it( "should delete Symbol( 'hello' ) property", ( ) => {
 
 			let symbol = Symbol( "hello" );
 			let data = { };
@@ -89,17 +89,59 @@ describe( "erode", ( ) => {
 
 } );
 
-
 //: @end-server
 
 
 //: @client:
+
+describe( "erode", ( ) => {
+
+	describe( "`erode( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
+		it( "should delete Symbol( 'hello' ) property", ( ) => {
+
+			let symbol = Symbol( "hello" );
+			let data = { };
+			data[ symbol ] = 12345;
+
+			erode( symbol, data );
+
+			assert.equal( data[ symbol ], undefined );
+
+		} );
+	} );
+
+} );
 
 //: @end-client
 
 
 //: @bridge:
 
+describe( "erode", ( ) => {
 
+	describe( "`erode( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
+		it( "should delete Symbol( 'hello' ) property", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					let symbol = Symbol( "hello" );
+					let data = { };
+					data[ symbol ] = 12345;
+
+					erode( symbol, data );
+
+					return data[ symbol ];
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, undefined );
+
+		} );
+	} );
+
+} );
 
 //: @end-bridge
