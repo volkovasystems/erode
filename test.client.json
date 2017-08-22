@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-22T08:11:43.590Z",
+	"end": "2017-08-22T08:12:25.456Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "erode",
+			"duration": 0,
+			"start": "2017-08-22T08:12:25.172Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "erode",
+			"duration": 98,
+			"start": "2017-08-22T08:12:25.172Z",
+			"end": "2017-08-22T08:12:25.270Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-22T08:12:25.174Z",
+					"end": "2017-08-22T08:12:25.175Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "erode",
+					"associatedTest": "should delete Symbol( 'hello' ) property"
+				},
+				{
+					"start": "2017-08-22T08:12:25.269Z",
+					"end": "2017-08-22T08:12:25.269Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "erode",
+					"associatedTest": "should delete Symbol( 'hello' ) property"
+				},
+				{
+					"start": "2017-08-22T08:12:25.270Z",
+					"end": "2017-08-22T08:12:25.270Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "erode"
+				}
+			]
+		},
+		{
+			"name": "`erode( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`",
+			"duration": 97,
+			"start": "2017-08-22T08:12:25.173Z",
+			"end": "2017-08-22T08:12:25.270Z",
+			"tests": [
+				{
+					"name": "should delete Symbol( 'hello' ) property",
+					"start": "2017-08-22T08:12:25.173Z",
+					"end": "2017-08-22T08:12:25.269Z",
+					"duration": 96,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

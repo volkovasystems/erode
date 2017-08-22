@@ -1,32 +1,32 @@
 {
-  "stats": {
-    "suites": 2,
-    "tests": 1,
-    "passes": 1,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-17T17:58:43.031Z",
-    "end": "2017-08-17T17:58:43.049Z",
-    "duration": 18
-  },
-  "tests": [
-    {
-      "title": "should be equal to undefined",
-      "fullTitle": "erode `erode( symbol, data )` should be equal to undefined",
-      "duration": 4,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should be equal to undefined",
-      "fullTitle": "erode `erode( symbol, data )` should be equal to undefined",
-      "duration": 4,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-22T08:11:42.476Z",
+		"end": "2017-08-22T08:11:42.481Z",
+		"duration": 5
+	},
+	"tests": [
+		{
+			"title": "should delete Symbol( 'hello' ) property",
+			"fullTitle": "erode `erode( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )` should delete Symbol( 'hello' ) property",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should delete Symbol( 'hello' ) property",
+			"fullTitle": "erode `erode( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )` should delete Symbol( 'hello' ) property",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
