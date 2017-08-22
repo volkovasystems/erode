@@ -119,6 +119,8 @@ describe( "erode", ( ) => {
 
 describe( "erode", ( ) => {
 
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
 	describe( "`erode( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should delete Symbol( 'hello' ) property", ( ) => {
 			//: @ignore:
