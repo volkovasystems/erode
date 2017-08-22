@@ -55,7 +55,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const erode = require( "./erode.js" );
@@ -72,50 +72,28 @@ const path = require( "path" );
 //: @server:
 
 describe( "erode", ( ) => {
-	
+
 	describe( "`erode( symbol, data )`", ( ) => {
 		it( "should be equal to undefined", ( ) => {
 
-		let symbol = Symbol( "hello" );
-		let data = { };
-		data[ symbol ] = 12345;
+			let symbol = Symbol( "hello" );
+			let data = { };
+			data[ symbol ] = 12345;
 
-		erode( symbol, data );
+			erode( symbol, data );
 
-		assert.equal( data[ symbol ], undefined );
-
+			assert.equal( data[ symbol ], undefined );
 
 		} );
 	} );
 
-	
 } );
 
 
 //: @end-server
 
 
-//: @client: 
-
-describe( "erode", ( ) => {
-	
-	describe( "`erode( symbol, data )`", ( ) => {
-		it( "should be equal to undefined", ( ) => {
-
-		let symbol = Symbol( "hello" );
-		let data = { };
-		data[ symbol ] = 12345;
-
-		erode( symbol, data );
-
-		assert.equal( data[ symbol ], undefined );
-
-
-		} );
-	} );
-
-	
-} );
+//: @client:
 
 //: @end-client
 
@@ -125,4 +103,3 @@ describe( "erode", ( ) => {
 
 
 //: @end-bridge
-
